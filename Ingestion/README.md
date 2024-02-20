@@ -8,3 +8,6 @@ Sources:
 
 ## Demo
 ![Data Factory for Integeration and Orchestration](../image/data_factory_overview.png)
+
+### Demo Ingestion Video
+[![Ingestion Video](../image/youtube_ingest_thumbnail.png)](https://youtu.be/_VPyWIOFi7s)
