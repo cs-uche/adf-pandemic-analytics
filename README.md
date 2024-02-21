@@ -2,7 +2,7 @@
 
 Azure Data Factory is a robust, fully managed Platform as a Service (PaaS) solution designed for Extract, Transform, Load (ETL) as well as Extract, Load, Transform (ELT) operations on data. It empowers users to efficiently orchestrate, automate, and manage the movement and transformation of data across various sources and destinations in the cloud.
 
-This project focuses on addressing the pressing need for understanding the impact of COVID-19 on society by creating a robust end-to-end data platform for reporting and predicting COVID-19 outbreaks.
+This project focuses on addressing the pressing need for understanding the impact of COVID-19 on society by creating a robust end-to-end **data platform** for reporting and predicting COVID-19 outbreaks.
 
 ## Business Problem
 Our organization seeks comprehensive insights into COVID-19, including historical data analysis on mortality rates and the spread of the virus. To achieve this, we aim to:
@@ -38,3 +38,6 @@ Our approach encompasses several key phases:
 
 ## Artifacts
 - ARM Template: Infrastructure as Code(IaC) for Azure environment setup.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
