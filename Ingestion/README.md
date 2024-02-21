@@ -7,7 +7,7 @@ Sources:
 - Blob Storage: Eurostats data is obtained from Azure Blob Storage.
 
 ## Demo
-![Data Factory for Integeration and Orchestration](../image/data_factory_overview.png)
+![Data Factory for Integeration and Orchestration](../image/ingest/data_factory_overview.png)
 
 ### Demo Ingestion Video
-[![Ingestion Video](../image/youtube_ingest_thumbnail.png)](https://youtu.be/_VPyWIOFi7s)
+[![Ingestion Video](../image/ingest/youtube_ingest_thumbnail.png)](https://youtu.be/_VPyWIOFi7s)

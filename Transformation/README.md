@@ -20,17 +20,17 @@ In this project we have selected certian Azure tools renowned for their efficien
 
 ## Demo
 **Databricks**
-![Databricks Runs](../image/databricks_runs.png)
+![Databricks Runs](../image/transform/databricks_runs.png)
 
 **Data Flow**
 - Cases and Deaths:
-  ![Data Flow for Cases and Deaths](../image/dflow_cases_and_deaths.png)
+  ![Data Flow for Cases and Deaths](../image/transform/dflow_cases_and_deaths.png)
 - Hospital Data:
-  ![Data Flow for Hospital Data](../image/dflow_hospital_admissions.png)
+  ![Data Flow for Hospital Data](../image/transform/dflow_hospital_admissions.png)
 
 **HDInsights**
 <br/>*Note: For cost optimization, the HDI cluster was configured with a single worker node, which resulted in the outputs being written to a single file. While this approach may reduce costs and is sufficient for this project, it deviates from the typical distributed computing architecture, potentially impacting performance and fault tolerance.*
-![HDInsights Pipeline](../image/hdinsights_pipeline.png)
+![HDInsights Pipeline](../image/transform/hdinsights_pipeline.png)
 
 ### Demo Transformation Video
-[![Transformation Video](../image/youtube_transform_thumbnail.png)](https://youtu.be/PLU25f_qOFg)
+[![Transformation Video](../image/transform/youtube_transform_thumbnail.png)](https://youtu.be/PLU25f_qOFg)
