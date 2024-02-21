@@ -4,7 +4,7 @@ Data transformation is a pivotal stage involving the structuring and cleansing o
 
 In this project we have selected certian Azure tools renowned for their efficiency in handling big data through distributed computing. Big Data typically refers to data that meets the 5 Vs - Volume, Variety, Veracity, Velocity, and Value(which evolve as our understanding of the characteristics of big data improves).
 
-Tools Used:
+## Tools Used:
 1. **Data Flow (Azure Data Factory)**: A user-friendly GUI tool for simple transformations, supporting distributed computing.
     * Description: Azure Data Factory's Data Flow offers a user-friendly GUI tool tailored for simplifying data transformations.
     * Features: It supports distributed computing, enabling seamless processing of large datasets across clusters.
