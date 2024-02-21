@@ -26,6 +26,13 @@ Our approach encompasses several key phases:
 5. **Reporting Trends**: Utilizing Power BI to visualize and analyze trends in COVID-19 data.
 6. **DevOps**: Implementing Continuous Integration (CI) and Continuous Deployment (CD) practices for maintaining the solution.
 
+### **Video Demos**
+- Ingestion Video
+<br/>[![Ingestion Video](./image/ingest/youtube_ingest_thumbnail.png)](https://youtu.be/_VPyWIOFi7s)
+- Transformation Video
+<br/>[![Transformation Video](./image/transform/youtube_transform_thumbnail.png)](https://youtu.be/PLU25f_qOFg)
+- Reporting Video
+<br/>[![Reporting Video](./image/report/youtube_reporting_thumbnail.png)](https://youtu.be/6NbJlEZz8I4)
 
 ## Tools Used
 - Azure SQL Database
