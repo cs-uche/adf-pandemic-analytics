@@ -1,0 +1,57 @@
+# Purpose: Build pipeline for the development Azure Data Factory 
+#           Automatically triggered on completion of a pull request and merge to main branch
+#           Validates the Data Factory resources 
+#           Generates the ARM template and publishes for consumption via Release pipeline
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  subscriptionId: 'SUBSCRIPTION ID'  
+  resourceGroup: 'RESOURCE GROUP'                      
+  dataFactory: 'DATA FACTORY'                       
+  PackageFolder: 'build'                                  
+  adfRootFolder: ''                                       
+
+steps:
+
+# Installs Node 
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.x'
+  displayName: 'Install Node.js'
+
+# Installs the npm packages saved in your package.json file in the build
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '$(Build.Repository.LocalPath)/$(packageFolder)' 
+    verbose: true
+  displayName: 'Install npm packages'
+
+# Validates all of the Data Factory resources in the repository. You'll get the same validation errors as when "Validate All" is selected.
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(Build.Repository.LocalPath)/build' 
+    customCommand: 'run build validate $(Build.Repository.LocalPath)/$(adfRootFolder) /subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.DataFactory/factories/$(dataFactory)'
+  displayName: 'Validate Data Factory Resources'
+
+# Generate the ARM template into the destination folder, which is the same as selecting "Publish" from the UX.
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(Build.Repository.LocalPath)/build' 
+    customCommand: 'run build export $(Build.Repository.LocalPath)/$(adfRootFolder) /subscriptions/$(subscriptionId)/resourceGroups/$(resourceGroup)/providers/Microsoft.DataFactory/factories/$(dataFactory) "ArmTemplate"'
+  displayName: 'Generate ARM template'
+
+# Publish the artifact to be used as a source for a release pipeline.
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.Repository.LocalPath)/$(packageFolder)/ArmTemplate' 
+    artifact: 'ArmTemplates'
+    publishLocation: 'pipeline'
+  displayName: 'Publish ARM tempate'
