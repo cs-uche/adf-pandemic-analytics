@@ -19,12 +19,12 @@ Our organization seeks comprehensive insights into COVID-19, including historica
 ## Approach
 Our approach encompasses several key phases:
 
-1. **Ingestion**: Gathering data from multiple sources into a centralized repository.
-2. **Transformation**: Structuring and cleansing data using various Azure tools.
-3. **Preparation of Reporting Data**: Aggregating and formatting data for reporting and analysis.
-4. **Orchestration and Monitoring**: Managing data pipelines and ensuring operational efficiency.
-5. **Reporting Trends**: Utilizing Power BI to visualize and analyze trends in COVID-19 data.
-6. **DevOps**: Implementing Continuous Integration (CI) and Continuous Deployment (CD) practices for maintaining the solution.
+1. [**Ingestion**](./Ingestion/README.md): Gathering data from multiple sources into a centralized repository.
+2. [**Transformation**](./Transformation/README.md): Structuring and cleansing data using various Azure tools.
+3. [**Preparation of Reporting Data**](./Reporting/README.md): Aggregating and formatting data for reporting and analysis.
+4. [**Orchestration and Monitoring**](./Reporting/README.md): Managing data pipelines and ensuring operational efficiency.
+5. [**Reporting Trends**](./Reporting/README.md): Utilizing Power BI to visualize and analyze trends in COVID-19 data.
+6. [**DevOps**](./DevOps/README.md): Implementing Continuous Integration (CI) and Continuous Deployment (CD) practices for maintaining the solution.
 
 ### **Video Demos**
 - Ingestion Video
@@ -33,6 +33,8 @@ Our approach encompasses several key phases:
 <br/>[![Transformation Video](./image/transform/youtube_transform_thumbnail.png)](https://youtu.be/PLU25f_qOFg)
 - Reporting Video
 <br/>[![Reporting Video](./image/report/youtube_reporting_thumbnail.png)](https://youtu.be/6NbJlEZz8I4)
+- DevOps Video
+<br/>[![DevOps Video](./image/devops/youtube_devops_thumbnail.png)](https://youtu.be/mGHZoHyP7OE)
 
 ## Tools Used
 - Azure SQL Database
